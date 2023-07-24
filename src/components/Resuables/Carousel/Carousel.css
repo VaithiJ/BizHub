@@ -1,0 +1,21 @@
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  object-fit: contain;
+  width: 90%;
+  height: 200px;
+  white-space: nowrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+.logoimage {
+  height: 100px;
+  margin-left: 70px;
+}
