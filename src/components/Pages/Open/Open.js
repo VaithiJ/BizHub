@@ -8,8 +8,9 @@ import "../../../assets/css/style.css";
 import "@windmill/react-ui";
 import client1 from "../../../assets/img/clients/client-1.png";
 import herooo from "../../../assets/img/hero-img.png";
-import heroo from "../../../assets/img/shop.gif";
+import heroo from "../../../assets/img/ecomm.jpg";
 import skills from "../../../assets/img/skills.png";
+import { useNavigate, useParams } from 'react-router-dom';
 
 import "../../../assets/css/style.css";
 import "../../../assets/img/favicon.png";
@@ -29,6 +30,18 @@ import bizhub from "../../Resuables/Carousel/Logo/BizHub.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const arttt = ()=>{
+  window.open("https://3.110.82.152/")
+}
+
+const realll = ()=>{
+  window.open("https://13.235.50.131/")
+}
+
+const blockliss = ()=>{
+  window.open("https://13.233.104.66/")
+}
 
 const Open = () => {
   function scrollToSection(id) {
@@ -53,7 +66,6 @@ const Open = () => {
       <>
         <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>Arsha Bootstrap Template - Index</title>
         <meta content="" name="description" />
         <meta content="" name="keywords" />
         {/* Favicons */}
@@ -169,13 +181,13 @@ const Open = () => {
                       <a href="#">Vastra</a>
                     </li>
                     <li>
-                      <a href="#">BlockFlexi</a>
+                      <a href="#" onClick={blockliss}>BlockListing</a>
                     </li>
                     <li>
-                      <a href="#">ArtChain</a>
+                      <a href="#" onClick={arttt}>ArtChain</a>
                     </li>
                     <li>
-                      <a href="#">RealChain</a>
+                      <a href="#" onClick={realll}>RealChain</a>
                     </li>
                     <li>
                       <a href="#">PetChain</a>
@@ -228,7 +240,7 @@ const Open = () => {
                 {/* <h1>All in one ecommerce site</h1>
                 <h2>10+ Applications for your use</h2> */}
                 <div className="exp">
-                  <h1 className="allinone">Find your E-commerce</h1>
+                  <h1 className="allinone" style={{fontFamily:"Poppins, sans-seriff", fontSize:"50px"}}>Find your E-commerce</h1>
                   <h4 className="buysell">
                     Empowering Secure and Transparent E-commerce on the
                     Blockchain !
@@ -259,6 +271,7 @@ const Open = () => {
                 <img
                   id="heroimage"
                   src={herooo}
+                  style={{width:"550px"}}
                   className="img-fluid animated"
                   alt=""
                 />
@@ -321,63 +334,7 @@ const Open = () => {
 
           {/* End Cliens Section */}
           {/* ======= About Us Section ======= */}
-          <section id="about" className="about">
-            <div className="container" data-aos="fade-up">
-              <div className="section-title">
-                <h2 style={{ color: "white" }}>About Us</h2>
-              </div>
-              {/* <div className="row content"> */}
-              {/* <div className="col-lg-6">
-                  <p></p>
-                  <ul>
-                    <li>
-                      <i className="ri-check-double-line" /> Various roles
-                      available for the customers to take part in
-                    </li>
-                    <li>
-                      <i className="ri-check-double-line" /> Enabled blockchain
-                      technology to increase trust and security
-                    </li>
-                    <li>
-                      <i className="ri-check-double-line" /> Verifiers verify
-                      the products listed on the ecommerce website
-                    </li>
-                    <li>
-                      <i className="ri-check-double-line" />
-                      Only verified products are present for sale
-                    </li>
-                  </ul>
-                </div> */}
-              <div className="col-lg-8 pt-4 pt-lg-0">
-                <div className="alignabout">
-                  <p className="bizhubdis">
-                    "Welcome to BizHub, your one-stop destination for buying and
-                    selling trusted and verified products, services, and jobs."
-                  </p>
-                  <br />
-                  <p className="bizhubdis">
-                    This introductory statement highlights that BizHub is a
-                    platform that serves as a single destination for individuals
-                    and businesses to engage in various transactions related to
-                    products, services, and job opportunities. It aims to
-                    provide a convenient marketplace where users can find
-                    everything they need, ranging from products to services to
-                    job listings.
-                  </p>
-                  <br />
-                  <p className="bizhubdis">
-                    "At BizHub, we strive to create a secure and transparent
-                    marketplace, where every listing undergoes a thorough
-                    verification process by our authorized verifiers."
-                  </p>
-                  {/* <a href="#" className="btn-learn-more">
-                    Learn More
-                  </a> */}
-                </div>
-              </div>
-              {/* </div> */}
-            </div>
-          </section>
+     
           {/* End About Us Section */}
           {/* ======= Why Us Section ======= */}
           <section id="why-us" className="why-us section-bg" data-aos="fade-up">
@@ -386,7 +343,7 @@ const Open = () => {
                 <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1">
                   <div className="content">
                     <h3>
-                      Welcome to BizHub - Your All-in-One Marketplace Solution{" "}
+                     BizHub - All-in-One Marketplace Solution{" "}
                       <strong>with Blockchain Technology</strong>
                     </h3>
                     <br />
@@ -532,6 +489,63 @@ const Open = () => {
     </section> */}
           {/* End Skills Section */}
           {/* ======= Services Section ======= */}
+          <section id="about" className="about">
+            <div className="container" data-aos="fade-up">
+              <div className="section-title">
+                <h2 style={{ color: "white" }}>About Us</h2>
+              </div>
+              {/* <div className="row content"> */}
+              {/* <div className="col-lg-6">
+                  <p></p>
+                  <ul>
+                    <li>
+                      <i className="ri-check-double-line" /> Various roles
+                      available for the customers to take part in
+                    </li>
+                    <li>
+                      <i className="ri-check-double-line" /> Enabled blockchain
+                      technology to increase trust and security
+                    </li>
+                    <li>
+                      <i className="ri-check-double-line" /> Verifiers verify
+                      the products listed on the ecommerce website
+                    </li>
+                    <li>
+                      <i className="ri-check-double-line" />
+                      Only verified products are present for sale
+                    </li>
+                  </ul>
+                </div> */}
+              <div className="col-lg-8 pt-4 pt-lg-0">
+                <div className="alignabout">
+                  <p className="bizhubdis">
+                    "Welcome to BizHub, your one-stop destination for buying and
+                    selling trusted and verified products and even services."
+                  </p>
+                  <br />
+                  <p className="bizhubdis">
+                    This introductory statement highlights that BizHub is a
+                    platform that serves as a single destination for individuals
+                    and businesses to engage in various transactions related to
+                    products, services, and job opportunities. It aims to
+                    provide a convenient marketplace where users can find
+                    everything they need, ranging from products to services to
+                    job listings.
+                  </p>
+                  <br />
+                  <p className="bizhubdis">
+                    "At BizHub, we strive to create a secure and transparent
+                    marketplace, where every listing undergoes a thorough
+                    verification process by our authorized verifiers."
+                  </p>
+                  {/* <a href="#" className="btn-learn-more">
+                    Learn More
+                  </a> */}
+                </div>
+              </div>
+              {/* </div> */}
+            </div>
+          </section>
           <section id="services" className="services section-bg">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
@@ -562,7 +576,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px", marginTop: "-5px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -587,7 +601,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px", marginTop: "35px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="" onClick={arttt}>Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -630,7 +644,7 @@ const Open = () => {
                         top: "-25px",
                       }}
                     >
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -653,7 +667,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px", marginTop: "10px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -677,7 +691,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px", marginTop: "50px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" onClick={realll} href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -699,7 +713,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -723,7 +737,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
@@ -746,7 +760,7 @@ const Open = () => {
                     <br />
 
                     <h5 style={{ fontSize: "18px", marginTop: "30px" }}>
-                      <a href="">Visit Site</a>
+                      <a className="hrefff" onClick={blockliss} href="">Visit Site</a>
                     </h5>
                   </div>
                 </div>
