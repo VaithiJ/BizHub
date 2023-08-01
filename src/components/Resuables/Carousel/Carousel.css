@@ -1,21 +1,36 @@
-.carousel {
-  display: flex;
-  gap: 1rem;
-  overflow-x: hidden;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  object-fit: contain;
+/* Add styles for the carousel container */
+.carousel-container {
+  overflow: hidden;
   width: 90%;
-  height: 200px;
-  white-space: nowrap;
   margin: auto;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 0px;
+  gap: 2rem;
 }
 
+/* Add styles for the carousel */
+.carousel {
+  display: flex;
+  animation: scrollCarousel 30s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Hide horizontal scrollbar */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Add styles for the logo images */
 .logoimage {
   height: 100px;
-  margin-left: 70px;
+  margin-left: 50px;
+}
+
+/* Define the keyframes for continuous scrolling */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -180%
+    ); /* Slide the images to the left by the width of one image */
+  }
 }
