@@ -188,7 +188,7 @@ const Open = () => {
 
                 <li className="dropdown">
                   <a id="coloronhover" href="#">
-                    <span style={{ marginLeft: "10px" }}>Services</span>{" "}
+                    <span style={{ marginLeft: "10px" }}>platforms</span>{" "}
                     <i
                       className="fas fa-arrow-down"
                       style={{ marginTop: "5px" }}
@@ -298,7 +298,7 @@ const Open = () => {
                       marginLeft: "-340px",
                     }}
                   >
-                    View More
+                    Buy Now
                   </Link>
                 </div>
               </div>
@@ -483,7 +483,7 @@ const Open = () => {
           <section id="services" className="services section-bg">
             <div className="container" data-aos="fade-up">
               <div className="section-title">
-                <h2>Services</h2>
+                <h2>platforms</h2>
                 <p>Our platform consists of these following applications</p>
               </div>
               <div className="row" style={{ marginTop: "40px" }}>
@@ -757,17 +757,17 @@ const Open = () => {
                     <div className="address">
                       <i className="bi bi-geo-alt" />
                       <h4>Location:</h4>
-                      <p>A108 Adam Street, New York, NY 535022</p>
+                      <p>ASV Ramana Towers, T. Nagar, Chennai-600017</p>
                     </div>
                     <div className="email">
                       <i className="bi bi-envelope" />
                       <h4>Email:</h4>
-                      <p>securekloud@gmail.com</p>
+                      <p>info@securekloud.com</p>
                     </div>
                     <div className="phone">
                       <i className="bi bi-phone" />
                       <h4>Call:</h4>
-                      <p>+1 5589 55488 55s</p>
+                      <p> 044 6602 8000</p>
                     </div>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7318435544444!2d80.24670741478363!3d13.029696290834336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52670a47bcf333%3A0xb2f7d8d0e2d78df!2sASV%20Ramana%20Towers!5e0!3m2!1sen!2sin!4v1629357638830!5m2!1sen!2sin"
